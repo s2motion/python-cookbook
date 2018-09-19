@@ -7,7 +7,7 @@ def search(lines, keyword, history=5):
       yield line, previous_lines
     previous_lines.append(line)
 
-
+#start main program
 if __name__ == '__main__':
   with open('somefile.txt') as f:
     for line, previous_lines in search(f, 'python', 5):
